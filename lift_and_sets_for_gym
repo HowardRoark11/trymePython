@@ -1,0 +1,17 @@
+agirlik=[]
+tekrar=[]
+while True:
+    giris=input("Ağırlık giriniz:")
+    if giris=="bitti":
+        break
+    else:
+        agirlik.append(float(giris))
+        giris2=int(input("Tekrar sayısını giriniz:"))
+        tekrar.append(giris2)
+        break
+toplam_hacim=0
+for a , t in zip(agirlik,tekrar):
+    toplam_hacim+= a*t
+
+print("Tekrar sayısı:", tekrar)
+print("Toplam Hacim:", toplam_hacim)
